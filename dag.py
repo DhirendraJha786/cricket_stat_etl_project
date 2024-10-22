@@ -23,5 +23,5 @@ dag = DAG('fetch_cricket_stats',
 with dag:
     run_script_task = BashOperator(
         task_id='run_script',
-        bash_command='python /home/airflow/gcs/dags/scripts/extract_and_push_gcs.py',
+        bash_command='python /home/airflow/gcs/dags/scripts/extract_push_to_gcs.py',
     )
